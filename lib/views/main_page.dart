@@ -26,7 +26,7 @@ class MainPage extends StatelessWidget {
             Tab(text: 'All'),
             Tab(text: 'Movies'),
             Tab(text: 'People'),
-            Tab(text: 'TV'),
+            //Tab(text: 'TV'),
           ],
         ),
       ),
@@ -36,7 +36,7 @@ class MainPage extends StatelessWidget {
           ContentListView(contentType: 'all'),
           ContentListView(contentType: 'movie'),
           ContentListView(contentType: 'person'),
-          ContentListView(contentType: 'tv'),
+          //ContentListView(contentType: 'tv'),
         ],
       ),
     );

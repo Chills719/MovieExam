@@ -902,7 +902,7 @@ class _MainTabPageState extends State<MainTabPage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -934,7 +934,6 @@ class _MainTabPageState extends State<MainTabPage>
             Tab(text: 'All'),
             Tab(text: 'Movies'),
             Tab(text: 'People'),
-            Tab(text: 'TV'),
           ],
         ),
       ),
@@ -944,7 +943,6 @@ class _MainTabPageState extends State<MainTabPage>
           ContentView(contentType: 'all'),
           ContentView(contentType: 'movie'),
           ContentView(contentType: 'person'),
-          ContentView(contentType: 'tv'),
         ],
       ),
     );

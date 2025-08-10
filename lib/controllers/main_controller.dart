@@ -9,7 +9,7 @@ class MainController extends GetxController with GetSingleTickerProviderStateMix
   @override
   void onInit() {
     super.onInit();
-    tabController = TabController(length: 4, vsync: this);
+    tabController = TabController(length: 3, vsync: this);
     
     // 监听标签页切换
     tabController.addListener(_onTabChanged);
@@ -36,7 +36,7 @@ class MainController extends GetxController with GetSingleTickerProviderStateMix
           contentController.fetchPersonContent();
           break;
         case 3: // TV
-          contentController.fetchTvContent();
+          //contentController.fetchTvContent();
           break;
       }
     }
@@ -54,7 +54,7 @@ class MainController extends GetxController with GetSingleTickerProviderStateMix
         contentController.refreshContent('person');
         break;
       case 3:
-        contentController.refreshContent('tv');
+        //contentController.refreshContent('tv');
         break;
     }
   }
